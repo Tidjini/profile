@@ -10,7 +10,7 @@ const colors = {
   isabelline: "#FEFEFE",
   blackOlive: "#3D3D3F"
 };
-export default ({ userImage, userName, valid, mail, number, span }) => {
+export default ({ userImage, userName, valid, mail, projectNumber, span }) => {
   return (
     <div>
       <div
@@ -47,7 +47,7 @@ export default ({ userImage, userName, valid, mail, number, span }) => {
             margin: 0
           }}
         >
-          Tidjini Messaoudi
+          {userName}
         </p>
         <p
           style={{
@@ -57,7 +57,7 @@ export default ({ userImage, userName, valid, mail, number, span }) => {
             margin: 0
           }}
         >
-          tidjini.messaoudi@gmail.com
+          {mail}
         </p>
         <div style={{ marginTop: 10 }}>
           <div style={{ float: "left" }}>
@@ -68,7 +68,7 @@ export default ({ userImage, userName, valid, mail, number, span }) => {
                 margin: 0
               }}
             >
-              56 projects
+              {projectNumber} projects
             </p>
             <p
               style={{
@@ -86,16 +86,18 @@ export default ({ userImage, userName, valid, mail, number, span }) => {
             className="button"
             style={{
               display: "inline-block",
-              fontSize: 12,
+              fontSize: 10,
               color: colors.red,
               textDecoration: "none",
               textAlign: "center",
               paddingTop: 6,
               paddingBottom: 6,
               paddingLeft: 10,
+
               paddingRight: 10,
               marginTop: 3,
-              marginLeft: 20
+              marginLeft: 20,
+              fontWeight: "bold"
             }}
           >
             SAVOIR PLUS

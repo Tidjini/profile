@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./css/header.css";
-import ctn from "./personel/Container";
 const logo = "{/}";
 
 const Header = () => {

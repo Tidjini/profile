@@ -18,7 +18,7 @@ const colors = {
   isabelline: "#FEFEFE",
   blackOlive: "#3D3D3F"
 };
-class Container extends Component {
+class PersonelContainer extends Component {
   render() {
     const { children } = this.props;
 
@@ -26,7 +26,12 @@ class Container extends Component {
     const height = this.props.windowHeight;
     return (
       <div
-        style={{ width, height: height - 40, position: "relative" }}
+        style={{
+          width,
+          height: height - 40,
+          position: "relative",
+          float: "left"
+        }}
         className="container"
       >
         <img
@@ -48,7 +53,12 @@ class Container extends Component {
             margin: "auto"
           }}
         >
-          <Informations userImage={user} />
+          <Informations
+            userImage={user}
+            userName="Tidjini Messaoudi"
+            mail="tidjini.messaoudi@gmail.com"
+            projectNumber="05"
+          />
           <p
             style={{ fontSize: 14, color: colors.dark_CC, fontStyle: "italic" }}
           >
@@ -84,4 +94,4 @@ class Container extends Component {
   }
 }
 
-export default windowSize(Container);
+export default windowSize(PersonelContainer);
