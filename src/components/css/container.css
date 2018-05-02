@@ -1,0 +1,12 @@
+.grad {
+  background: linear-gradient(to bottom, #ffffff00, #ffffff);
+}
+
+.container {
+  border-style: solid;
+  border-right-width: 1px;
+  border-left: 0;
+  border-bottom: 0;
+  border-top: 0;
+  border-color: #12120020;
+}
